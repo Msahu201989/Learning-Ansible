@@ -2,11 +2,11 @@
  tasks:
   -name: Print Hello
    ansible.builtin.debug:
-     msg: Hello
+      msg: Hello
 
 
  -host: all
  tasks:
-    -name: Print bye
+   -name: Print bye
    ansible.builtin.debug:
-       msg: Bye
+      msg: Bye
