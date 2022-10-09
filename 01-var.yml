@@ -61,7 +61,7 @@
 # Below we declaring Fact copied variable from "{{out.stdout}}" & make attached to SHELL_STDOUT now using SHELL_STDOUT Everywhere
     - name: declare a Fact
       ansible.builtin.set_fact:
-        SHELL_STDOUT: ""{{out.stdout}}""
+        SHELL_STDOUT: "{{out.stdout}}"
 
     - name: Print shell output from set_fact variable
       ansible.builtin.debug:
