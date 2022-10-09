@@ -9,7 +9,7 @@
 
 - name: Demo on File Variable
   hosts: all
-  vars_file:
+  vars_files:
     - sample.var.yml
   tasks:
     - name: Print URL
