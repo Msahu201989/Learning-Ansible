@@ -8,5 +8,5 @@
  -host: all
  tasks:
     -name: Print bye
-     ansible.builtin.debug:
+   ansible.builtin.debug:
        msg: Bye
