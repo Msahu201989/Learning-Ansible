@@ -42,4 +42,4 @@
   hosts: all
   tasks:
     - ansible.builtin.debug:
-     msg: Hostname = {{ ansible_hostname }}
+       msg: Hostname = {{ ansible_hostname }}
