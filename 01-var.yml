@@ -55,4 +55,5 @@
 
     - name: Print out register
       ansible.builtin.debug:
-        msg: "{{out}}"
+        msg: "{{out.stdout}}"
+# Above {{out.stdout}}" here stdout we are setting to get output of STD out for load average.
