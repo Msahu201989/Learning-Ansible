@@ -1,3 +1,9 @@
 - name: Run Shell Command
   ansible.builtin.shell: uptime
-  register:
+  register: out
+
+- name: Print uptime output
+  ansible.builtin.debug:
+    msg: "{{out.stdout}}"
+
+
