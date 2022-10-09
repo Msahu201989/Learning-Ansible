@@ -34,3 +34,11 @@
     - name: Print URL
       ansible.builtin.debug:
         msg: URL == {{ URL }}
+
+## Ansible Pre defined Variables Below
+
+- name: Print Fact
+  hosts: all
+  tasks:
+    - ansible.builtin.debug
+     msg: Hostname = {{ ansible_hostname }}
