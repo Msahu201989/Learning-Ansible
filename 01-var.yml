@@ -37,8 +37,9 @@
 
 ## Ansible Pre defined Variables Below
 
+
 - name: Print Fact
   hosts: all
   tasks:
-    - ansible.builtin.debug
+    - ansible.builtin.debug:
      msg: Hostname = {{ ansible_hostname }}
