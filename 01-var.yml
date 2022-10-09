@@ -7,11 +7,11 @@
       ansible.builtin.debug:
         msg: 'URL = {{ URL }}'
 
--name: Demo on File Variable
+- name: Demo on File Variable
   hosts: all
   vars_file:
     - sample.var.yml
-    tasks:
-      - name: Print URL
-        ansible.builtin.debug:
-          msg: URL = {{ URL }}
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
