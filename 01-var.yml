@@ -58,9 +58,10 @@
         msg: "{{out.stdout}}"
 # Above {{out.stdout}}" here stdout we are setting to get output of STD out for load average.
 
-# Below we declaring Fact copied variable from "{{out.stdout}}" & make attached to SHELL_STDOUT now using SHELL_STDOUT Everywhere
+# Below we declaring Fact copied variable from "{{out.stdout}}" & make attached to SHELL_STDOUT now using SHELL_STDOUT Everywhere VD-22 42 Min
     - name: declare a Fact
       ansible.builtin.set_fact:
+# above "ansible.builtin.set_fact" is module for set fact
         SHELL_STDOUT: "{{out.stdout}}"
 
     - name: Print shell output from set_fact variable
