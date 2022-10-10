@@ -5,7 +5,7 @@
      ansible.builtin.debug:
        msg: Hello world
      loop:
-       -apple
-       -banana
-       -mango
+       - apple
+       - banana
+       - mango
 
