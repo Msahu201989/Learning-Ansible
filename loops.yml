@@ -4,4 +4,9 @@
    - name: print debug
      ansible.builtin.debug:
        msg: Hello world
+# we need to iterate this so now in picture comes loop
+       loop:
+         -apple
+         -banana
+         -mango
 
