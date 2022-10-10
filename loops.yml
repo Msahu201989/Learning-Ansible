@@ -16,5 +16,5 @@
      # we need to iterate above code so now in picture comes loop below
      loop:
        - { name: "apple", quantity: 100 }
-       - { name: "banana", quantity: 100 }
-       - { name: "mango", quantity: 100 }
+       - { name: "banana", quantity: 200 }
+       - { name: "mango", quantity: 50 }
