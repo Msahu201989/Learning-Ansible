@@ -3,7 +3,7 @@
   tasks:
    - name: print debug
      ansible.builtin.debug:
-       msg: Hello world
+       msg: Fruit Name = {{item}}
      # we need to iterate above code so now in picture comes loop below
      loop:
        - apple
