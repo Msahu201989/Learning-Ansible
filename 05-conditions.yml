@@ -3,5 +3,5 @@
   tasks:
     - name: String Check
       debug:
-        msg: Hello Centos
+        msg: Hello centos
       when: ansible_distribution == "centos"
